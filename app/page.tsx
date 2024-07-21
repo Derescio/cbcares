@@ -1,9 +1,35 @@
 import Hero from "@/components/Hero";
+import FeaturedSection from "@/components/FeaturedSection";
+
+const features = [
+  {
+    image: '/images/permanent.jpg',
+    title: 'Permannet Stay',
+    description: 'Our Homes are designed to provide a safe and comfortable environment for our residents.',
+     ctaText: 'Learn More',
+    ctaLink: '/'
+  },
+  {
+    image: '/images/respite.jpg',
+    title: 'Respite Stay',
+    description: 'Our Staff is trained to provide the best care for our residents. We are committed to providing the best care for our residents.',
+     ctaText: 'Learn More',
+    ctaLink: '/'
+  },
+  {
+    image: '/images/senior.jpg',
+    title: 'Senior Program',
+    description: 'We create a community of support for our residents and a comfortable envrionment for all.',
+     ctaText: 'Learn More',
+    ctaLink: '/'
+  },
+];
 
 export default function Home() {
   return (
     <>
     <Hero />
+    <FeaturedSection features={features} />
     </>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
