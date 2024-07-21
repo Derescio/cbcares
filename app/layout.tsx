@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
       <ChakraProvider theme={theme}>
       <Layout>
-            {children}
+      {children}
           </Layout>
         </ChakraProvider>
         </body>

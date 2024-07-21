@@ -1,4 +1,4 @@
-'use client';
+
 
 import { Box, Container, Stack, Text, Link } from '@chakra-ui/react'
 
