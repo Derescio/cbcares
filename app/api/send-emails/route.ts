@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer'
 
-export async function POST(request: Request) {
-  const { name, email, message } = await request.json()
+export async function POST(req: Request) {
+  const { name, email, message } = await req.json()
 
   // Create a transporter using SMTP
   let transporter = nodemailer.createTransport({
