@@ -1,3 +1,4 @@
+import { Layout } from '../components/Layout'
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from './theme'
 import type { Metadata } from "next";
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <ChakraProvider theme={theme}>
-          {children}
+      <Layout>
+            {children}
+          </Layout>
         </ChakraProvider>
         </body>
     </html>
