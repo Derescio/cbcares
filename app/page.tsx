@@ -2,9 +2,9 @@ import Hero from "@/components/Hero";
 import FeaturedSection from "@/components/FeaturedSection";
 import dynamic from 'next/dynamic'
 import { FAQAccordion } from "@/components/FAQ";
-import { ContactForm } from "@/components/ContactForm";
-import { Box } from "@chakra-ui/react";
-import Link from "next/link";
+// import { ContactForm } from "@/components/ContactForm";
+// import { Box } from "@chakra-ui/react";
+// import Link from "next/link";
 
 
 const DynamicVideoTestimonials = dynamic(() => import('../components/VideoTestimonials').then(mod => mod.VideoTestimonials))
@@ -43,9 +43,9 @@ export default function Home() {
     {/* <FeaturedSection features={features} /> */}
     <DynamicVideoTestimonials />
     {/* <Link href="#contact"> */}
-    <Box id="contact">
+    {/* <Box id="contact">
     <ContactForm />
-    </Box>
+    </Box> */}
     {/* </Link> */}
     
     </>

@@ -21,7 +21,7 @@ export const ContactForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/send-email', {
+      const response = await fetch('/api/send-emails', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
