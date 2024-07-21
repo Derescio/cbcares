@@ -35,6 +35,7 @@ export const Header = () => {
         <NavItem href="/">Home</NavItem>
         <NavItem href="/about">About</NavItem>
         <NavItem href="/programs">Programs</NavItem>
+        <NavItem href="/contact">Contact</NavItem>
         <NavItem href="/get-involved">Get Involved</NavItem>
       </Stack>
       <IconButton
@@ -53,7 +54,7 @@ export const Header = () => {
     top="100%"
     left={0}
     right={0}
-    bg="linear-gradient(to left, #4a90e2, #50e3c2, 0.9)"
+    bg="linear-gradient(to left, #4a90e2, #50e3c2, 0.8)"
     zIndex={10}
     
   >
@@ -61,6 +62,7 @@ export const Header = () => {
       <NavItem href="/">Home</NavItem>
       <NavItem href="/about">About</NavItem>
       <NavItem href="/programs">Programs</NavItem>
+      <NavItem href="/contact">Contact</NavItem>
       <NavItem href="/get-involved">Get Involved</NavItem>
     </Stack>
   </Box>
