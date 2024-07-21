@@ -8,13 +8,7 @@ import logo from '../public/images/logo.png'
 import Image from 'next/image';
 import NextLink from 'next/link'
 
-// const NavItem = ({ href, children }: { href: string; children: React.ReactNode }) => (
-//   <NextLink href={href} passHref>
-//     <Link p={2}>
-//       {children}
-//     </Link>
-//   </NextLink>
-// )
+
 
 const NavItem = ({ href, children }: { href: string; children: React.ReactNode }) => (
     <Link as={NextLink} href={href} p={2}>
