@@ -1,5 +1,10 @@
 import Hero from "@/components/Hero";
 import FeaturedSection from "@/components/FeaturedSection";
+import dynamic from 'next/dynamic'
+import { FAQAccordion } from "@/components/FAQ";
+
+const DynamicVideoTestimonials = dynamic(() => import('../components/VideoTestimonials').then(mod => mod.VideoTestimonials))
+
 
 const features = [
   {
@@ -30,6 +35,9 @@ export default function Home() {
     <>
     <Hero />
     <FeaturedSection features={features} />
+    <FAQAccordion />
+    {/* <FeaturedSection features={features} /> */}
+    <DynamicVideoTestimonials />
     </>
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     //   <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
